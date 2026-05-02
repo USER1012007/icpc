@@ -30,5 +30,5 @@
 		- Para obtener el resto de bits, basta con hacer desplazamiento de bits:
 		- $$0111_{2} >> 1 = 0011_{2}$$
 		- Entonces haciendo un proceso iterativo de desplazamiento de un bit (o simplemente dividir entre 2 que finalmente es lo mismo) y a su vez ir obteniendo cada bit con el módulo 2 es suficiente para obtener las potencias de 2 que conforman a un número arbitrario $k$.
-  - Promeblema: [1594B](https://codeforces.com/problemset/problem/1594/B)
+  - Problema: [1594B](https://codeforces.com/problemset/problem/1594/B)
   - Resultados del algoritmo implementado: Time: 31 ms, Memory: 0kb 

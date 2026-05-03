@@ -1,28 +1,32 @@
-#include <bits/stdc++.h>
+#include <iostream>
+
+#define FAST_IO ios_base::sync_with_stdio(false); cin.tie(NULL)
 using namespace std;
 
-int main(int argc, char *argv[]) {
+typedef long long ll;
 
-  long long t;
+int main(){
+  FAST_IO;
+  
+  ll t, MOD = 1e9 + 7;
   cin >> t;
-  long long arrt[t];
-  for (long long i = 0; i < t; i++) {
-    long long n;
+  
+  ll r;
+  for (ll i = 0; i < t; i++) {
+    ll n;
     cin >> n;
     if ((n & 1) == 0) {
       long long pares = n / 2;
-      arrt[i] = (pares * pares * (pares - 1)) / 2;
-      arrt[i] += pares * (pares - 1) * (pares - 2) / 6;
+      r = (pares * pares * (pares - 1)) / 2;
+      r += pares * (pares - 1) * (pares - 2) / 6;
     } else {
-      long long pares = (n - 1) / 2;
-      long long impares = pares + 1;
-      arrt[i] = (pares * impares * (impares - 1)) / 2;
-      arrt[i] += pares * (pares - 1) * (pares - 2) / 6;
+      ll pares = (n - 1) / 2;
+      ll impares = pares + 1;
+      r = (pares * impares * (impares - 1)) / 2;
+      r += pares * (pares - 1) * (pares - 2) / 6;
     }
-  }
 
-  for (long long i = 0; i < t; i++) {
-    cout << arrt[i] % (long long)(10e9 + 7) << endl;
+    cout << r % MOD << "\n"; 
   }
 
   return 0;

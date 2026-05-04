@@ -13,3 +13,5 @@
 # Link 
 [linksito](https://codeforces.com/problemset/problem/29/C) 
 
+# Autor 
+- emilio

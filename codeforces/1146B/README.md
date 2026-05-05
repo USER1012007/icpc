@@ -4,3 +4,5 @@
 1100
 # Solución
 Cadenas
+# Autor
+Darío

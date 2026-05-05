@@ -2,10 +2,10 @@
 - 1146F
 
 # Dificultad
--
+- 2500
 
 # Titulo 
--
+- F. Leaf Partition
 
 # Solucion
 - 

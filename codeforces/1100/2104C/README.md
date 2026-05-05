@@ -21,3 +21,6 @@ es posible determinar las únicas dos condiciones ganadoras de Bob.
 - Bob gana si tiene la primer carta y alguna más en algún lugar.
 
 Sabiendo esto, si Bob no tiene una condición ganadora, entonces pierde.
+
+# Autor
+Darío

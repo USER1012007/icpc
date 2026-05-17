@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <cmath>
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
@@ -8,14 +11,41 @@ void fast_io() {
   cin.tie(NULL);
 }
 
-void solve() {}
+bool solve() {
+  ll x1, y1, r1;
+  ll x2, y2, r2;
+  ll k;
+
+  cin >> x1 >> y1 >> r1;
+  cin >> x2 >> y2 >> r2;
+  cin >> k;
+
+  ll difx = x2 - x1;
+  ll dify = y2 - y1;
+  double distancia = sqrt((difx * difx) + (dify * dify));
+  ll sumr = r1 + r2;
+
+  ll rmax = max(r1, r2);
+  ll rmin = min(r1, r2);
+
+  if (distancia > sumr)
+    return false;
+
+  double result = distancia + sumr;
+
+  if (distancia == 0 || rmax >= (2 * rmin)) {
+    return (2 * rmax) >= k;
+  }
+
+  return result >= k;
+}
 
 int main() {
   fast_io();
-  int t = 1;
-  // cin >> t;
+  int t;
+  cin >> t;
   while (t--) {
-    solve();
+    cout << (solve() ? "YES" : "NO") << '\n';
   }
   return 0;
 }
